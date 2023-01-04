@@ -1,7 +1,23 @@
 import React, {useState} from 'react'
-import { Paper, Checkbox } from '@mui/material'
-const Item = ({itemId, itemTitle, itemDesc, isCompleted}) => {
-    const [checked, setChecked] = useState(isCompleted);
+import { Paper, Checkbox, Button } from '@mui/material'
+import DeleteIcon from '@mui/icons-material/Delete';
+const Item = ({url, itemId, itemTitle, itemDesc, isCompleted}) => {
+    const [checked, setChecked] = useState(isCompleted === 'true');
+    const handleCheckClick = (e) => {
+      setChecked(!checked)
+      e.preventDefault();
+      const task = {itemTitle, itemDesc, checked};
+      console.log(JSON.stringify(task));
+      fetch(url+'/item/complete/' + itemId, {
+        method: 'PUT',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(task)
+      })
+
+    }
+    const handleDeleteClick = (e) => {
+
+    }
   return (
     
     <div>
@@ -11,14 +27,17 @@ const Item = ({itemId, itemTitle, itemDesc, isCompleted}) => {
         key={itemId}
         >
             Id: {itemId}
+            
             <br/>
             Task Title: {itemTitle}
             <br/>
             Description: {itemDesc}
             <br/>
             
-            Complete?: {isCompleted}
-            <Checkbox checked={checked}/>
+            Complete?: 
+            <Checkbox checked={checked} onClick={handleCheckClick}/>
+            <br/>
+            <DeleteIcon onClick={handleDeleteClick}/>
         </Paper>
     </div>
   )

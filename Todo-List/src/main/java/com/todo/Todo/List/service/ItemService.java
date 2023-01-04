@@ -14,4 +14,6 @@ public interface ItemService {
 
     public Optional<Item> getItemById(Integer id);
 
+    public boolean toggleComplete(Integer id);
+
 }

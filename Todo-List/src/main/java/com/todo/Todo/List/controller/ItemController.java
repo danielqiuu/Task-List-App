@@ -3,6 +3,7 @@ package com.todo.Todo.List.controller;
 import com.todo.Todo.List.model.Item;
 import com.todo.Todo.List.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -43,6 +44,18 @@ public class ItemController {
     @GetMapping("/getItem/{itemId}")
     public Optional<Item> getItemById(@PathVariable("itemId") Integer id){
         return itemService.getItemById(id);
+    }
+
+    @CrossOrigin
+    @PutMapping("/complete/{itemId}")
+    public String toggleCompleted(@PathVariable("itemId") Integer id){
+        if(itemService.toggleComplete(id) == true){
+            return "True";
+        }
+        else{
+            return "False";
+        }
+
     }
 
 }

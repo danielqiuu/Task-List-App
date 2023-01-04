@@ -64,7 +64,7 @@ const Todo = () => {
       <h1>ToDo List</h1>
       <Paper elevation={3} style={paperStyle}>
         {items.map((item) => (
-          <Item itemId={item.id} itemTitle={item.itemTitle} itemDesc={item.itemDesc} isCompleted={item.completed.toString()}/>
+          <Item url={url} itemId={item.id} itemTitle={item.itemTitle} itemDesc={item.itemDesc} isCompleted={item.completed.toString()}/>
         ))
 
         }
