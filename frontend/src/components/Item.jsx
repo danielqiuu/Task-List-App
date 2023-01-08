@@ -17,6 +17,10 @@ const Item = ({url, itemId, itemTitle, itemDesc, isCompleted}) => {
     }
     const handleDeleteClick = (e) => {
 
+      fetch(url+'/item/delete/' + itemId,{
+        method: 'DELETE',
+        headers: {'Content-Type': 'application/json'}
+      })
     }
   return (
     
