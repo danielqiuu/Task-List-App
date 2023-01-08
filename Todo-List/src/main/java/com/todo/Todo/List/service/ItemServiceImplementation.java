@@ -35,5 +35,22 @@ public class ItemServiceImplementation implements ItemService{
         return itemRepo.findById(id);
     }
 
+    @Override
+    public boolean toggleComplete(Integer id) {
+        Item item = itemRepo.findById(id).orElse(null);
+        item.setCompleted(!item.isCompleted());
+        itemRepo.save(item);
+        return item.isCompleted();
+    }
+
+    @Override
+    public Item editItem(Integer id, Item newItem) {
+        Item item = itemRepo.findById(id).orElse(null);
+        item.setItemTitle(newItem.getItemTitle());
+        item.setItemDesc(newItem.getItemDesc());
+        itemRepo.save(item);
+        return item;
+    }
+
 
 }
