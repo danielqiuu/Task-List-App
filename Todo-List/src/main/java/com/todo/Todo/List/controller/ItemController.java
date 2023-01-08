@@ -46,7 +46,7 @@ public class ItemController {
         return itemService.getItemById(id);
     }
 
-    @CrossOrigin
+
     @PutMapping("/complete/{itemId}")
     public String toggleCompleted(@PathVariable("itemId") Integer id){
         if(itemService.toggleComplete(id) == true){
@@ -55,7 +55,11 @@ public class ItemController {
         else{
             return "False";
         }
+    }
 
+    @PutMapping("/edit/{itemId}")
+    public String editItem(@PathVariable("itemId") Integer id, @RequestBody Item request){
+        return itemService.editItem(id, request).toString();
     }
 
 }

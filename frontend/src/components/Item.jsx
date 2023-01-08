@@ -38,21 +38,18 @@ const Item = ({url, itemId, itemTitle, itemDesc, isCompleted}) => {
         style={{ margin: "10px", padding: "15px", textAlign: "left" }}
         key={itemId}
         >
-            Id: {itemId}
-            
-            <br/>
             Task Title: {itemTitle}
             <br/>
             Description: {itemDesc}
             <br/>
             
-            Complete?: 
+            Complete: 
             <Checkbox checked={checked} onClick={handleCheckClick}/>
             <br/>
             <DeleteIcon onClick={handleDeleteClick} style={{cursor:"pointer"}}/>
             <br/>
             <EditIcon onClick={handleEditClick}/>
-            <ItemEditPopup visible={popupVisible} setVisible={setPopupVisible} itemTitle={itemTitle} itemDesc={itemDesc}></ItemEditPopup>
+            <ItemEditPopup visible={popupVisible} setVisible={setPopupVisible} id={itemId}itemTitle={itemTitle} itemDesc={itemDesc} url={url}></ItemEditPopup>
         </Paper>
     </div>
   )

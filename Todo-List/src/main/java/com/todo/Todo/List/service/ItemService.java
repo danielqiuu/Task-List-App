@@ -16,4 +16,6 @@ public interface ItemService {
 
     public boolean toggleComplete(Integer id);
 
+    public Item editItem(Integer id, Item i);
+
 }
