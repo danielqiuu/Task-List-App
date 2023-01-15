@@ -18,7 +18,7 @@ Written using Java, JavaScript and styled using @MUI and Tailwind CSS.
 ![image](https://user-images.githubusercontent.com/65613404/212564768-c079841a-5bf0-4153-8323-55ad67630694.png)
 
 - Editing an existing task
-![image](https://user-images.githubusercontent.com/65613404/212564694-da503716-2008-468d-93b5-f46a90fc2dda.png)
+![image](https://user-images.githubusercontent.com/65613404/212564866-b15f36b2-9843-477d-acb0-e3642c2e34fd.png)
 ![image](https://user-images.githubusercontent.com/65613404/212564779-8cdb03eb-8802-4557-b790-4e7b891b8eb8.png)
 
 - Marking a task as complete
