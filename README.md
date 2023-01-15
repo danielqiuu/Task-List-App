@@ -11,7 +11,7 @@ Written using Java, JavaScript and styled using @MUI and Tailwind CSS.
 
 ## Showcase
 - On launch
-<img src="https://user-images.githubusercontent.com/65613404/212564741-7190d911-c2c1-46d2-af97-825fa5fa425f.png" width="250" height="250">
+<img src="https://user-images.githubusercontent.com/65613404/212564741-7190d911-c2c1-46d2-af97-825fa5fa425f.png" height="250">
 
 - Adding a task
 <img src="https://user-images.githubusercontent.com/65613404/212564762-f302dabe-cfed-45e3-bba0-2ce581969e6a.png" width="250" height="250">
