@@ -11,12 +11,16 @@ Written using Java, JavaScript and styled using @MUI and Tailwind CSS.
 
 ## Showcase
 - On launch
-![image](https://user-images.githubusercontent.com/65613404/212564618-24ebaaa5-94bd-4c5e-9c97-12bc581add0e.png)
+![image](https://user-images.githubusercontent.com/65613404/212564741-7190d911-c2c1-46d2-af97-825fa5fa425f.png)
 
 - Adding a task
-![image](https://user-images.githubusercontent.com/65613404/212564663-f1180fbd-c496-461e-a1aa-778393cd4cef.png)
-![image](https://user-images.githubusercontent.com/65613404/212564677-0d863fea-c348-49b1-a1c3-01e7fb039d68.png)
+![image](https://user-images.githubusercontent.com/65613404/212564762-f302dabe-cfed-45e3-bba0-2ce581969e6a.png)
+![image](https://user-images.githubusercontent.com/65613404/212564768-c079841a-5bf0-4153-8323-55ad67630694.png)
 
 - Editing an existing task
 ![image](https://user-images.githubusercontent.com/65613404/212564694-da503716-2008-468d-93b5-f46a90fc2dda.png)
-![image](https://user-images.githubusercontent.com/65613404/212564703-724604f1-6bd1-4c57-b17b-853facdd0839.png)
+![image](https://user-images.githubusercontent.com/65613404/212564779-8cdb03eb-8802-4557-b790-4e7b891b8eb8.png)
+
+- Marking a task as complete
+![image](https://user-images.githubusercontent.com/65613404/212564800-e86dda77-6195-4e9a-a03d-605c40022ed9.png)
+
